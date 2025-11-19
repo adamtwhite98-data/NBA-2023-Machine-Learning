@@ -7,6 +7,9 @@ output:
     vertical_layout: fill
     source_code: embed
     theme: united
+    rmarkdown: render("your_dashboard.Rmd", 
+                  output_file = "dashboard.html",
+                  self_contained = TRUE)
 ---
 
 ```{r setup, include=FALSE}
